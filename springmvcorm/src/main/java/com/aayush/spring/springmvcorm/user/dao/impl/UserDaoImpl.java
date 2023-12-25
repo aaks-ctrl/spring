@@ -52,4 +52,9 @@ public class UserDaoImpl implements UserDao {
 		return hibernateTemplate.loadAll(User.class);
 	}
 
+	@Override
+	public User userExists(int id) {
+		return hibernateTemplate.get(User.class, id);
+	}
+
 }

@@ -15,4 +15,6 @@ public interface UserDao {
 	User read(int id);
 
 	List<User> load();
+
+	User userExists(int id);
 }

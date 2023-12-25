@@ -8,4 +8,6 @@ public interface UserService {
 	int save(User user);
 
 	List<User> load();
+
+	User getUser(Integer id);
 }
